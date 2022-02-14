@@ -12,15 +12,6 @@ import {DynamoDbStreamsEventDefinition, StringKeyObject} from "./types";
 import * as DynamodbStreamsClient from "aws-sdk/clients/dynamodbstreams"
 import {FilterPatterns} from "./filterPatterns/filterGrammar";
 
-interface DynamoDbStreamReadableOpts {
-    shardId: string
-    limit: number
-    readInterval?: number
-    iterator?: 'LATEST' | 'TRIM_HORIZON'
-    startAt?: string
-    startAfter?: string
-}
-
 export default class StreamsController {
     private readonly dynamodbClient: DynamoDBClient
     private readonly dynamodbStreamsClient: DynamodbStreamsClient

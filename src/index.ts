@@ -8,7 +8,7 @@ import {FunctionDefinition, getFunctionsWithStreamEvents} from "./support";
 import {SLS_CUSTOM_OPTION, SLS_OFFLINE_OPTION} from "./constants";
 import {default as Lambda} from 'serverless-offline/dist/lambda'
 
-export default class ServerlessPlugin {
+export default class ServerlessDynamoStreamsPlugin {
     commands: object = []
     hooks: StringKeyObject<Function>
     slsOfflineLambda?: typeof Lambda
@@ -101,4 +101,4 @@ const mergeOptions = (serverless: Serverless, cliOptions: StringKeyObject<any>) 
     return {...offlineOptions, ...customOptions, ...extraOptions, ...cliOptions}
 }
 
-module.exports = ServerlessPlugin
+module.exports = ServerlessDynamoStreamsPlugin
