@@ -14,7 +14,7 @@ It is inspired by an earlier plugin: [serverless-offline-dynamodb-streams](https
 # Installation
 
 ```bash
-npm install 
+npm install serverless-offline-dynamodb-streams-handler
 ```
 
 In your serverless.yml:
