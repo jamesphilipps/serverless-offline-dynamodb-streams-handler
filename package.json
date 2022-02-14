@@ -1,7 +1,6 @@
 {
-  "name": "@59a/jp-serverless-plugin",
+  "name": "serverless-offline-dynamodb-streams-handler",
   "version": "1.0.0",
-  "private": true,
   "main": "dist/index.js",
   "scripts": {
     "compile": "tsc --build",
